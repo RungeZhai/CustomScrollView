@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TWv-NY-c7b">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="229.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bpj-rL-581">
+                                        <rect key="frame" x="124.5" y="37.5" width="71" height="155.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="130"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="Bpj-rL-581" secondAttribute="centerX" id="36f-dk-kmi"/>
+                                    <constraint firstAttribute="centerY" secondItem="Bpj-rL-581" secondAttribute="centerY" id="k1U-VV-kh7"/>
+                                    <constraint firstAttribute="height" constant="229.5" id="nzJ-4Y-Scz"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QHf-VN-bvb" customClass="CustomScrollView">
+                                <rect key="frame" x="0.0" y="229" width="320" height="339"/>
+                                <color key="backgroundColor" red="0.23921568630000001" green="0.71372549019999998" blue="0.50196078430000002" alpha="0.75" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QHf-VN-bvb" secondAttribute="bottom" id="2Nx-I0-LMH"/>
+                            <constraint firstItem="QHf-VN-bvb" firstAttribute="top" secondItem="TWv-NY-c7b" secondAttribute="bottom" id="5rE-uR-bVc"/>
+                            <constraint firstAttribute="trailing" secondItem="TWv-NY-c7b" secondAttribute="trailing" id="GN2-Bh-jbf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QHf-VN-bvb" secondAttribute="bottom" id="Gu9-7f-z0J"/>
+                            <constraint firstItem="QHf-VN-bvb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LnF-fo-hgU"/>
+                            <constraint firstItem="TWv-NY-c7b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VO1-RI-y2w"/>
+                            <constraint firstAttribute="trailing" secondItem="QHf-VN-bvb" secondAttribute="trailing" id="ZHf-8G-Ri8"/>
+                            <constraint firstItem="TWv-NY-c7b" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="yTu-Pf-pAG"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2Nx-I0-LMH"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="customScrollView" destination="QHf-VN-bvb" id="5z7-EP-htW"/>
+                        <outlet property="label" destination="Bpj-rL-581" id="uWv-NG-26r"/>
+                        <outlet property="topViewHeight" destination="nzJ-4Y-Scz" id="My4-oH-PuL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
